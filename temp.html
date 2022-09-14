@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="variety">Choose a Treatment:</label>
+    <select name="variety" id="variety" onchange="cb()">
+        <option value="Italian Basil">Italian Basil</option>
+        <option value="Peppermint">Peppermint</option>
+        <option value="Flat Parsley">Flat Parsley</option>
+        <option value="Mountain Coriander">Mountain Coriander</option>
+        <option value="Bordeaux Basil">Bordeaux Basil</option>
+    </select>
+</body>
+<script>
+    function cb2() {
+            let variety = document.getElementById('variety').value
+            let data = {
+                    'variety': variety
+                }
+            $.getJSON({
+                url: "/callback-3",
+                data: data,
+                success: function (result) {
+                    Plotly.newPlot('chart_3', result, {staticPlot: true});;
+                }
+            });
+        }
+</script>
+</html>
