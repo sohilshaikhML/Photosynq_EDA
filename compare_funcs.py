@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 def compare_crops_height(crop_1, crop_2, tray_position, treatment):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -26,7 +26,7 @@ def compare_crops_height(crop_1, crop_2, tray_position, treatment):
 
 
 def compare_crops_area(crop_1, crop_2, tray_position, treatment):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -47,7 +47,7 @@ def compare_crops_area(crop_1, crop_2, tray_position, treatment):
 
 
 def compare_crops_greennes(crop_1, crop_2, tray_position, treatment):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -68,7 +68,7 @@ def compare_crops_greennes(crop_1, crop_2, tray_position, treatment):
 
 
 def compare_tray_positions_height(tray_position_1, tray_position_2, treatment_ctp, crop_ctp):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -91,7 +91,7 @@ def compare_tray_positions_height(tray_position_1, tray_position_2, treatment_ct
 
 
 def compare_tray_positions_area(tray_position_1, tray_position_2, treatment_ctp, crop_ctp):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -114,7 +114,7 @@ def compare_tray_positions_area(tray_position_1, tray_position_2, treatment_ctp,
 
 
 def compare_tray_positions_greennes(tray_position_1, tray_position_2, treatment_ctp, crop_ctp):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -137,7 +137,7 @@ def compare_tray_positions_greennes(tray_position_1, tray_position_2, treatment_
 
 
 def compare_treatments_height(treatment_1, treatment_2, tray_position_ct, crop_ct):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -158,7 +158,7 @@ def compare_treatments_height(treatment_1, treatment_2, tray_position_ct, crop_c
 
 
 def compare_treatments_area(treatment_1, treatment_2, tray_position_ct, crop_ct):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -179,7 +179,7 @@ def compare_treatments_area(treatment_1, treatment_2, tray_position_ct, crop_ct)
 
 
 def compare_treatments_greennes(treatment_1, treatment_2, tray_position_ct, crop_ct):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop'] = df['Crop '].str.strip()
     df['Tray_position'] = df['Tray_position '].str.strip()
     df['Treatment'] = df['Treatment '].str.strip()
@@ -208,7 +208,7 @@ def heightChart(crop='Lt63', tray_position='A7', treatment='Control'):
     # else:
     #     df_temp = df.loc[(df['country'] == country)]
 
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop '] = df['Crop '].str.strip()
     df['Tray_position '] = df['Tray_position '].str.strip()
     df['Treatment '] = df['Treatment '].str.strip()
@@ -234,7 +234,7 @@ def areaChart(crop='Lt63', tray_position='A7', treatment='Control'):
     # else:
     #     df_temp = df.loc[(df['country'] == country)]
 
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Plantye.csv")
+    df = pd.read_csv("Data/Plantye.csv")
     df['Crop '] = df['Crop '].str.strip()
     df['Tray_position '] = df['Tray_position '].str.strip()
     df['Treatment '] = df['Treatment '].str.strip()
@@ -252,7 +252,7 @@ def areaChart(crop='Lt63', tray_position='A7', treatment='Control'):
 
 
 def barChart(variety='Italian Basil'):
-    df = pd.read_csv("/Users/mohammedsohilshaikh/Desktop/Venturit/Photosynq/Data/Metabolites.csv")
+    df = pd.read_csv("Data/Metabolites.csv")
     df['Variety'] = df['Variety'].str.strip()
 
     df_temp = df.loc[(df['Variety'] == variety) & (df['Rep'] == 1)]
